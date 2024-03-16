@@ -21,6 +21,9 @@ jobs:
           - arch: x86_64
             sdk_url_path: https://downloads.openwrt.org/snapshots/targets/x86/64
             sdk_name: -sdk-x86-64_
+          - arch: aarch64
+            sdk_url_path: https://downloads.openwrt.org/snapshots/targets/bcm27xx/bcm2711
+            sdk_name: -sdk-bcm27xx-bcm2711_
 
     env:
       SDK_URL_PATH: ${{ matrix.sdk_url_path }}
